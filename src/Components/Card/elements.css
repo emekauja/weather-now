@@ -3,15 +3,16 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 18px;
-  min-width: 450px;
-  max-width: 35%;
+  max-width: 100%;
   background: #e0e0e0;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  padding-bottom: 20px;
+  padding-bottom: clamp(0.8rem, 3.3vh, 1.5rem);
   cursor: pointer;
   height: 250px;
   perspective: 1000px;
   margin-top: 2rem;
+  flex-shrink: 1;
+  flex-basis: calc((60ch -100%) * 999);
 }
 
 .card-top {
@@ -19,7 +20,7 @@
 }
 
 .card-temp {
-  font-size: 60px;
+  font-size: clamp(2.5rem, 10vh, 3.7rem);
 }
 
 .card-details--right {
@@ -28,7 +29,7 @@
 .card-details {
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
+  padding-left: 1.875rem;
 }
 
 .card-temp:nth-last-of-type(1) {
@@ -52,11 +53,13 @@
 
 .card-title {
   text-align: left;
+  font-size: clamp(1rem, 3vh, 1.8rem);
 }
 
 .card-info {
   display: flex;
   justify-content: space-around;
+  font-size: clamp(0.9rem, 1vh, 1.2rem);
 }
 
 .card-info__icon {
@@ -64,13 +67,13 @@
 }
 
 .card-location {
-  font-size: 120%;
+  font-size: clamp(1rem, 1vh, 1.5rem);
   color: rgba(34, 17, 17, 0.6);
 }
 
 .card-description {
   width: 60%;
-  font-size: 16px;
+  font-size: clamp(0.8rem, 1vh, 1.5rem);
   text-align: left;
   font-weight: bold;
   padding-left: 20px;
@@ -115,7 +118,7 @@
 }
 
 .card-back__temp {
-  font-size: 90px;
+  font-size: clamp(3rem, 14.5vh, 5.6rem);
 }
 
 .card-back__left .card-back__info,
