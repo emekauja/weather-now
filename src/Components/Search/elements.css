@@ -60,6 +60,7 @@ button.unit {
   align-items: center;
   margin: 1rem 1rem/2;
   font-size: 1rem * 1.2;
+  padding: 1.5rem;
 }
 
 button.unit.icon {

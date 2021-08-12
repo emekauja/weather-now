@@ -24,7 +24,7 @@ export const Search = ({ getQuery }) => {
             />
           </label>
           <button className="unit" type="button" onClick={() => getQuery(text)}>
-            <SearchIcon width={20} height={20} />
+            Search
           </button>
         </div>
       </form>
