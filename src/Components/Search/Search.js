@@ -1,5 +1,4 @@
 import * as React from "react";
-import { SearchIcon } from "../Icons";
 import "./elements.css";
 
 export const Search = ({ getQuery }) => {
